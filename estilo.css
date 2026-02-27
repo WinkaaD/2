@@ -1,0 +1,227 @@
+/* ===== ESTILO GENERAL ===== */
+
+body { 
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+    margin: 0;
+    padding: 30px;
+    background: linear-gradient(180deg, #4fb6ac, #2aa198);
+    color: #333;
+}
+
+
+
+.top-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 15px;                 
+    margin-bottom: 30px 0;      
+    flex-wrap: wrap;
+}
+/* ===== INPUT BUSQUEDA ===== */
+
+input#busqueda {
+    padding: 6px;
+    width: 250px;
+    font-size: 14px;
+    border: 1px solid #888;
+    border-radius: 3px;
+}
+
+/* ===== TABLA ===== */
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+	margin: 0 auto;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+/* ===== BOTONES ===== */
+
+.btn {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid #888;
+    background-color: #f0f0f0;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Botón redondeado opcional */
+.btn-pill {
+    border-radius: 999px;
+}
+
+/* ===== MENSAJES ===== */
+
+.mensaje-exito {
+    padding: 10px;
+    background-color: #d4edda;
+    border: 1px solid #28a745;
+    color: #155724;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.mensaje-error {
+    padding: 10px;
+    background-color: #f8d7da;
+    border: 1px solid #dc3545;
+    color: #721c24;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 25px;
+}
+.btn-success {
+    background-color: #0f766e;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-success:hover {
+    background-color: #0d5f59;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-danger:hover {
+    background-color: #b02a37;
+}
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 250px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #2aa198;
+    box-shadow: 0 0 0 2px rgba(42,161,152,0.2);
+}
+
+
+.btn-agregar {
+    background-color: #1f7a6b;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+	margin: 0 ;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-agregar:hover {
+    background-color: #176457;
+}
+/* ===== FORMULARIOS ===== */
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    margin: 30px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.campo input:focus {
+    border-color: #2aa198;
+    box-shadow: 0 0 0 2px rgba(42,161,152,0.2);
+    outline: none;
+}
+
+.acciones-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+/* Esto quita el fondo blanco y los bordes al form de la tabla */
+td.acciones-tabla form {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* Ajuste opcional para que los botones no se peguen */
+.acciones-tabla {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
